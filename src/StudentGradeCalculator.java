@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.event.*;
+import java.awt.*;
 
 public class StudentGradeCalculator extends JFrame implements ActionListener {
 
@@ -53,9 +54,56 @@ public class StudentGradeCalculator extends JFrame implements ActionListener {
         calculateButton.addActionListener(this);
         clearButton.addActionListener(this);
 
+// =========================
+// COLORS
+// =========================
+
+        getContentPane().setBackground(new Color(230, 240, 255));
+
+        title.setForeground(new Color(0, 70, 140));
+        title.setFont(new Font("Arial", Font.BOLD, 18));
+
+        nameLabel.setForeground(Color.BLACK);
+        javaLabel.setForeground(Color.BLACK);
+        dbmsLabel.setForeground(Color.BLACK);
+        dsaLabel.setForeground(Color.BLACK);
+        osLabel.setForeground(Color.BLACK);
+        cnLabel.setForeground(Color.BLACK);
+
+        totalLabel.setForeground(new Color(0, 100, 0));
+        percentageLabel.setForeground(new Color(0, 100, 0));
+        gradeLabel.setForeground(new Color(0, 100, 0));
+
+        nameField.setBackground(Color.WHITE);
+        javaField.setBackground(Color.WHITE);
+        dbmsField.setBackground(Color.WHITE);
+        dsaField.setBackground(Color.WHITE);
+        osField.setBackground(Color.WHITE);
+        cnField.setBackground(Color.WHITE);
+
+        totalField.setBackground(new Color(220, 255, 220));
+        percentageField.setBackground(new Color(220, 255, 220));
+        gradeField.setBackground(new Color(220, 255, 220));
+
+        totalField.setForeground(new Color(0, 100, 0));
+        percentageField.setForeground(new Color(0, 100, 0));
+        gradeField.setForeground(new Color(0, 100, 0));
+
+        calculateButton.setBackground(new Color(0, 120, 215));
+        calculateButton.setForeground(Color.WHITE);
+
+        clearButton.setBackground(new Color(220, 60, 60));
+        clearButton.setForeground(Color.WHITE);
+
+        calculateButton.setFont(new Font("Arial", Font.BOLD, 12));
+        clearButton.setFont(new Font("Arial", Font.BOLD, 12));
+
+        gradeField.setFont(new Font("Arial", Font.BOLD, 14));
+
+// Positions
         // Positions
 
-        title.setBounds(80, 15, 250, 30);
+        title.setBounds(30, 15, 300, 30);
 
         nameLabel.setBounds(30, 55, 100, 25);
         nameField.setBounds(150, 55, 180, 25);
